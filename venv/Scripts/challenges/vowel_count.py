@@ -10,7 +10,11 @@ https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/python
 s = "ameixa"
 
 v = ['a', 'e', 'i', 'o', 'u']
+
+
 '''
+PRIMEIRA RESOLUÇÃO
+
 count = 0
 
 for i in v:
@@ -22,20 +26,6 @@ print(count)
 
 '''
 
-marcos = list(map(lambda r: r in 'aeiou', s)).count(True)
-
 
 def get_count(input_str):
     return list(map(lambda r: r in 'aeiou', s)).count(True)
-
-
-print(get_count(s))
-
-# a for a in s
-
-# print(s.count('a'))
-
-# if 'a' in s:
-#     count += 1
-
-# print(count)
