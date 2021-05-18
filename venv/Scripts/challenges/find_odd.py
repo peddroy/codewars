@@ -6,20 +6,33 @@ https://www.codewars.com/kata/54da5a58ea159efa38000836/train/python
 
 '''
 
+# from collections import Counter
+
 n = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]
 
-n_set = dict([n])
 
-print(n)
-print(n_set)
+# def find_it(seq):
 
-# m = [[0 for x in range(0, 3)] for x in range(0, 3)]
+#     n_set = set(seq)
 
-# print(m)
+#     for i in n_set:
+#         count = 0
+#         for j in n:
+#             if i == j:
+#                 count += 1
 
-# for i in n:
-#     for j in n_set:
-#         if i == j:
+#         if count % 2 != 0:
+#             max = i
+
+#     return max
 
 
-# dicionario.update({i: quantidade de vezes})
+# print(find_it(n))
+
+pessoa = {}
+
+for i in n:
+    print(i)
+    pessoa = pessoa.update({.fromkeys(['numero'], i)})
+
+print(pessoa)
